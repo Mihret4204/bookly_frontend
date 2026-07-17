@@ -1,73 +1,130 @@
-# React + TypeScript + Vite
+# 📖 Bookly Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application for discovering, reviewing, and managing books using the Bookly REST API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🔐 User Authentication
+- 📚 Browse Books
+- ❤️ Favorite Books
+- ⭐ Reviews
+- 👤 User Profile
+- 📱 Responsive Design
+- ⚡ Fast UI with React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Tailwind CSS
+- React Router
+- Axios
+- Vite
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🌐 Live Demo
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+
+https://bookly-frontend-52r3.vercel.app/
+
+---
+
+## 🔗 Backend API
+
+Repository:
+
+
+https://github.com/Mihret4204/bookly_backend
+
+
+API Documentation:
+
+https://bookly-backend-ly2m.onrender.com/docs
+
+---
+
+# 📸 Screenshots
+
+## Home Page
+
+<img width="1267" height="550" alt="image" src="https://github.com/user-attachments/assets/18b747ce-7639-463c-8ea5-dd8bdf46b8cd" />
+
+## Login
+<img width="629" height="274" alt="image" src="https://github.com/user-attachments/assets/37b08e6b-9e6b-4bfd-ab3d-ae853e775173" />
+
+## Book Details
+
+<img width="1263" height="553" alt="image" src="https://github.com/user-attachments/assets/5cf194c9-e350-4b71-a595-a8aff05aeba2" />
+
+
+## Favorites
+
+<img width="632" height="258" alt="image" src="https://github.com/user-attachments/assets/76ccb494-6634-4d71-9a34-323107da8b5d" />
+
+
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+├── pages/
+├── hooks/
+├── services/
+├── layouts/
+├── context/
+├── routes/
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Clone the repository
+
+```bash
+git clone <repository-url>
+cd bookly-frontend
 ```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Configure environment variables
+
+Create a `.env` file.
+
+```env
+VITE_API_URL=https://bookly-backend-ly2m.onrender.com
+```
+
+### Run the application
+
+```bash
+npm run dev
+```
+
+---
+
+## 🚀 Future Improvements
+
+- 📱 Offline support for reading and browsing
+- ⚡ Performance optimizations and caching
+- 📄 Support for PDF/EPUB uploads with an integrated document reader
+---
+
+## 👨‍💻 Author
+
+**Mihret Tena**
+
+GitHub: https://github.com/Mihret4204
