@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAuthStore } from '../store/authStore';
 
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000/api/v1',
+  baseURL: 'https://bookly-backend-ly2m.onrender.com/api/v1',
   // Do NOT set a default Content-Type here.
   // Axios sets 'application/json' for plain objects automatically,
   // and 'multipart/form-data' with the correct boundary for FormData.
